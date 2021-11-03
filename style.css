@@ -23,7 +23,7 @@
 
 .gallery-item {
     display: inline-block;
-    margin: 0.5%;
+    margin: 2% 0.5%;
     --item-o_margin: 1%;
     --gallery-spaces: calc( var(--gallery-o_padding) + var(--item-o_margin) * 2);
     width: calc(((100% - var(--gallery-spaces)) / 3) - 1px);

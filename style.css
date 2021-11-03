@@ -14,21 +14,22 @@
 .gallery {
     margin-top: 20px;
     /* background-color: aqua; */
+    padding: 2% 1% 0 1%;
+    --gallery-o_padding: 2%;
 }
 
 
-.row {
-    margin-bottom: 2%;
-}
 
 
 .gallery-item {
     display: inline-block;
-    width: calc(100% / 3 - 1% - 3px);
-    /* padding: 1% 2%; */
     margin: 0.5%;
-    vertical-align: bottom;
+    --item-o_margin: 1%;
+    --gallery-spaces: calc( var(--gallery-o_padding) + var(--item-o_margin) * 2);
+    width: calc(((100% - var(--gallery-spaces)) / 3) - 1px);
+    vertical-align: top;
 }
+
 
 
 .gallery-item figure {
